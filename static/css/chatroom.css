@@ -1,0 +1,82 @@
+
+body {
+    background-color: #282828;
+}
+
+#message-div {
+    position: relative;
+}
+
+.msg-div {
+    position: absolute;
+    bottom: 2rem;
+    right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#msg {
+    height: 30px;
+    width: 45vw;
+    border-radius: 15px;
+    border: none;
+    background-color: aliceblue;
+}
+
+#chat-btn {
+    background-color: transparent;
+    padding: 0px;
+    border: none;
+}
+
+svg {
+    margin-left: 15px;
+    width: 25px;
+    height: 25px;
+}
+
+.my-msg {
+    color: #1d1f1f;
+    font-style: italic; 
+    display: none;
+    border-radius: 7px 17px 7px 0px;
+    background-color: aliceblue;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    position: absolute;
+    left: 0.5rem;
+    width: 70vw;
+}
+
+.my-msg .chat-owner {
+    font-style:normal;
+    font-weight: bold;
+    color: #5ee780;
+}
+
+.rec-msg {
+    color: purple;
+    border-radius: 7px 7px 0px 17px;
+    background-image: linear-gradient(to bottom right, #ffa19f, #ffeda5, #cfffbd);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    right: 0.5rem;
+    width: 70vw;
+}
+
+.rec-msg .chat-owner {
+    font-style:normal;
+    font-weight: bold;
+    color: blue;
+}
+
+#message-div p {
+    padding: 0px;
+    margin-left: 1rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}

@@ -1,0 +1,78 @@
+body {
+    background-color: #282828;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header-text {
+    font-size: xx-large; 
+    color: #5ee780;
+}
+
+p {
+    color: aliceblue;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
+}
+
+#input {
+    border: none;
+    border-radius: 7px 0px 0px;
+}
+
+#button {
+    background: #5ee780; 
+    margin-left: 2px;
+    width: 55px;
+    border-radius: 0px 0px 7px 0px;
+    border: none;
+}
+
+.images {
+    margin-top: 50px;
+    min-width: 60vw;
+}
+
+.bg1 {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    left: 1rem;
+}
+
+.bg2 {
+    position: relative;
+    display: flex;
+    justify-content: right;
+    right: 1rem;
+}
+
+.bg3 {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    left: 1rem;
+}
+
+.bg4 {
+    position: relative;
+    display: flex;
+    justify-content: right;
+    right: 1rem;
+}

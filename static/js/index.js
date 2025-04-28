@@ -21,8 +21,9 @@ socket.onmessage = function (event) {
         chat = document.createElement('div');
     // append new elements to dom
         messageArea.appendChild(chat);
-        chat.setAttribute('class', data.user_token === authToken ? 'my-msg': '' )
+        chat.setAttribute('class', data.user_token === authToken ? 'my-msg': 'rec-msg' )
         chat.appendChild(chatOwner);
+        chatOwner.setAttribute('class', 'chat-owner')
         chat.appendChild(chatMessage);
     // update with new messages
         chatMessage.textContent = message;

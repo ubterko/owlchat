@@ -6,11 +6,14 @@ from datetime import datetime, timezone, timedelta
 from jose import jwt, JWTError
 from fastapi.templating import Jinja2Templates
 from .config import SECRET_KEY, ALGORITHM 
+from pathlib import Path 
+
+base_dir = Path(__file__).resolve().parent 
 
 
 app = FastAPI() 
-templates = Jinja2Templates(directory=("./owlchat/templates")) 
-app.mount("/static", StaticFiles(directory=("./owlchat/static")), name="static") 
+templates = Jinja2Templates(directory=(f"{base_dir}/templates")) 
+app.mount("/static", StaticFiles(directory=(f"{base_dir}/static")), name="static") 
 
 
 @app.get("/chatroom")

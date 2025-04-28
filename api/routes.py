@@ -24,7 +24,7 @@ class WebSocketManager:
         for connections in self.active_connections:
             await connections.send_json({"user_name": user_name, "user_token": user_token, "message": message})
 
-manager = WebSocketManager()
+manager = WebSocketManager() 
             
 def get_auth_token(raw_token: str = Query(...)):
     try:
