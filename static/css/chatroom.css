@@ -5,12 +5,15 @@ body {
 
 #message-div {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
 }
 
-.msg-div {
+.chat-input-div {
     position: absolute;
     bottom: 2rem;
-    right: 1rem;
+    right: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,22 +34,21 @@ body {
 }
 
 svg {
-    margin-left: 15px;
-    width: 25px;
-    height: 25px;
+    padding-left: 15px;
+    height: 35px;
+    width: 35px;
 }
 
 .my-msg {
     color: #1d1f1f;
-    font-style: italic; 
+    font-style: italic;  
     display: none;
     border-radius: 7px 17px 7px 0px;
     background-color: aliceblue;
     padding-top: 5px;
     padding-bottom: 5px;
     margin-bottom: 10px;
-    position: absolute;
-    left: 0.5rem;
+    position: relative;
     width: 70vw;
 }
 
@@ -64,7 +66,7 @@ svg {
     padding-bottom: 5px;
     margin-bottom: 10px;
     position: relative;
-    right: 0.5rem;
+    margin-left: auto;
     width: 70vw;
 }
 

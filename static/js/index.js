@@ -15,6 +15,8 @@ socket.onmessage = function (event) {
     const messageArea = document.getElementById('message-div');
     if (_isTyping) {
         chatMessage.textContent = message;
+        console.log(true)
+        console.log(isTyping)
     } else {
         chatMessage = document.createElement('p');
         chatOwner = document.createElement('p');
@@ -36,6 +38,7 @@ function sendInitialMessage(){
     const message = document.getElementById('msg');
     if (isTyping) {
         socket.send(`true:${message.value}`)
+        // socket.send(JSON.stringify({"isTyping": true, "message": message.value}))
     } else {
         socket.send(`false:${message.value}`)
         isTyping = true;
