@@ -5,7 +5,7 @@ A simple chatroom project to get familiarized with websockets and fastapi.
 An anonimous chatroom with emphasis on transparency and security. The app allows users to view each others thought processs as they type their messages. Each letter entered in the textbox gets sent to the reciever at the other end. 
 
 ## Features 
-♨️ Realtime Chat 
+♨️ Realtime Chat
 ☢️ User identification
 🌠 View each others thought-process as you type
 ❤️ FastAPI WebSockets 
