@@ -6,9 +6,12 @@ An anonimous chatroom with emphasis on transparency and security. The app allows
 
 ## Features 
 ♨️ Realtime Chat
+
 ☢️ User identification
+
 🌠 View each others thought-process as you type
-❤️ FastAPI WebSockets 
+
+❤️ FastAPI WebSockets
 
 ## Technologies 
 1) HTML
@@ -17,7 +20,7 @@ An anonimous chatroom with emphasis on transparency and security. The app allows
 4) Python (FastAPI)
 
 ## Directory Structure 
-.
+```
 ├── README.md
 ├── __init__.py
 ├── api
@@ -45,5 +48,5 @@ An anonimous chatroom with emphasis on transparency and security. The app allows
     └── git
 
 11 directories, 22 files
-
+```
 
